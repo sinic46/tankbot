@@ -1,5 +1,4 @@
 from fastapi import FastAPI
-from decimal import Decimal
 
 app = FastAPI()
 
@@ -13,7 +12,7 @@ def read_root():
 
 
 @app.post("/direction/{x}/{y}")
-def movement_direction(x:Decimal,y:Decimal):
+def movement_direction(x:int,y:int):
     return{"message":f"the x axis is {x} and the y axis is {y}"}
 
 

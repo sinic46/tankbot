@@ -1,13 +1,12 @@
 from requests import get
 
 
+
 def light_the_beacon():
 
     response = get("https://robotapi.sinic.co.uk")
 
     print(f"beacons are lit. {response.text}")
-
-
 
 
 
